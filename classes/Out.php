@@ -11,7 +11,7 @@ namespace App;
 
 class Out
 {
-    function getPerson($firstName, $lastName, $date){
+    static function getPerson($firstName, $lastName, $date){
         $person = new Person($firstName, $lastName, $date);
         return "<script>console.log('".$person->getFirstName()."\t".$person->getLastName()."\t".date_format($person->getDayOfBirth(), 'd-m-Y')."');</script>";
     }

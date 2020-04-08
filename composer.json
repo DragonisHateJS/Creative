@@ -12,5 +12,8 @@
         {
             "App\\": "classes"
         }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.1"
     }
 }
